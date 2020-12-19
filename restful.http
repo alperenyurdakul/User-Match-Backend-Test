@@ -1,0 +1,48 @@
+POST http://localhost:3000/users/giris
+Content-Type: application/json
+
+{
+   "name":"kız1",
+   "phone":"+905212212871241",
+   "last_active":12321312,
+   "created_at":2133453243,
+   "firebase_id":"12313fefs323",
+   "city":"istanbul",
+   "gender":"female",
+   "wanted_gender":"male"
+}
+
+###
+POST http://localhost:3000/matches/find 
+Content-Type: application/json
+
+{
+   "_id":"5fcbc376718ed71d96d2b188"
+}
+
+###
+
+POST http://localhost:3000/matches/result
+Content-Type: application/json
+
+{
+   "_id":"5fcbc376718ed71d96d2b188",
+   "match_user_id": "5fcbd310f6bc4e20d03aa647",
+   "result": true
+}
+
+
+###
+POST http://localhost:3000/matches/new-match
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/auth
+
+Content-Type: application/json
+
+{
+   ADMIN_PASSWORD = Kral.baba5566
+
+}
